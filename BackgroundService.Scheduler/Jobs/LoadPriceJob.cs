@@ -78,7 +78,7 @@ namespace BackgroundService.Scheduler.Jobs
 
                     ICollection<Task<bool>> tasks = new List<Task<bool>>();
 
-                    newSeriesEntries.ToList().ForEach(async item =>
+                    newSeriesEntries.ToList().ForEach(item =>
                     {
                         item.SeriesId = existedSeries.Id;
 
